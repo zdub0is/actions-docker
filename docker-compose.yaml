@@ -1,0 +1,10 @@
+services:
+  runner:
+    build:
+      context: .
+      dockerfile: dockerfile
+      args:
+        - URL=$URL
+        - TOKEN=$TOKEN
+    container_name: runner-persevere
+    
